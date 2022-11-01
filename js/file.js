@@ -37,10 +37,13 @@ console.log(divPassangerInfo);
 
 //condizioni:
 
-if (ageUser <= 18) {
+if (ageUser <= 17) {
+    alert("In quanto minorenne viene applicato uno sconto del 20%");
     divPriceTicket.innerHTML = `Il prezzo del tuo biglietto è: ${discount20}`;
+    
     console.log(div)
 } else if (ageUser >= 65) {
+    alert("In quanto over 65 ti è stato applicato uno sconto del 40%");
     divPriceTicket.innerHTML = `Il prezzo del tuo biglietto è: ${discount40}`;
 } else {
     divPriceTicket.innerHTML = `Il prezzo del tuo biglietto è: ${priceTicket}`;
